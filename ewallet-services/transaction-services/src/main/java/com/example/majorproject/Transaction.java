@@ -26,7 +26,7 @@ public class Transaction {
     private String toUser;
 
     private int amount;
-
+    @Column(columnDefinition = "varchar(20)")
     private TransactionStatus status;
 
     private String transactionTime;
