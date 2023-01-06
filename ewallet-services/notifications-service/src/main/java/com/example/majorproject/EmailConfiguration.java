@@ -2,7 +2,6 @@ package com.example.majorproject;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
-import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -24,7 +23,7 @@ public class EmailConfiguration {
         mailSender.setPort(587);
 
         mailSender.setUsername("avengersbackendbank1@gmail.com");
-        mailSender.setPassword("test@1234");
+        mailSender.setPassword("llvgjmacbkyedjnt");
 
         Properties props = mailSender.getJavaMailProperties();
         props.put("mail.transport.protocol", "smtp");

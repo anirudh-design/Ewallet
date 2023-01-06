@@ -67,8 +67,7 @@ public class TransactionService {
 
         Transaction transaction = transactionRepository.findByTransactionId(transactionid);
 
-        if(status=="SUCCESS")
-        transaction.setStatus(TransactionStatus.SUCCESS);
+        if(status.equals("SUCCESS")) transaction.setStatus(TransactionStatus.SUCCESS);
         else transaction.setStatus(TransactionStatus.FAILED);
 
         transactionRepository.save(transaction);
