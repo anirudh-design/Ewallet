@@ -26,7 +26,7 @@ public class Transaction {
     private String toUser;
 
     private int amount;
-    @Column(columnDefinition = "varchar(20)")
+    @Enumerated(EnumType.STRING)
     private TransactionStatus status;
 
     private String transactionTime;
